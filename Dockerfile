@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM milvusdb/milvus:2.4.4
