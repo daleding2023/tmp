@@ -1,1 +1,1 @@
-FROM zilliz/attu:latest
+FROM zilliz/milvus_cli:latest
