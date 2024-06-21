@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM xprobe/xinference:latest
