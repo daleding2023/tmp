@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM mintplexlabs/anythingllm:latest
