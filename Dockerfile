@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM ollama/ollama:latest
