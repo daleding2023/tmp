@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM vllm/vllm-openai:latest
