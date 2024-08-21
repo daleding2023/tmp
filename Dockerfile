@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM eosphorosai/dbgpt-docs:latest
