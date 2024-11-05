@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM neo4j:latest
