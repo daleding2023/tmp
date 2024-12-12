@@ -1,2 +1,2 @@
 #FROM moby/buildkit:buildx-stable-1
-FROM build
+FROM docker.io/library/build:latest
