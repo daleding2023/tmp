@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM cucker/get_command_4_run_container
