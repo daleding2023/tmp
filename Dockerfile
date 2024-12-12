@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM moby/buildkit:buildx-stable-1
