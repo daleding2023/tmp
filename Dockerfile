@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM 1panel/maxkb:latest
