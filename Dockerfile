@@ -1,1 +1,1 @@
-FROM mintplexlabs/anythingllm
+FROM langgenius/dify-api:main
