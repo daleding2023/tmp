@@ -1,2 +1,2 @@
 FROM mintplexlabs/anythingllm:latest
-#v1.7.4 20250218
+#v1.7.5 20250311
