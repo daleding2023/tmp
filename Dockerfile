@@ -5,4 +5,5 @@
 #ENV YARN_VERSION=1.22.22
 #FROM node:latest
 #FROM node:18.20.5
-FROM node:18.20.5-slim
+#FROM node:18.20.5-slim
+FROM tabbyml/tabby:20250324
