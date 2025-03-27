@@ -6,4 +6,4 @@
 #FROM node:latest
 #FROM node:18.20.5
 #FROM node:18.20.5-slim
-FROM tabbyml/tabby:20250324
+FROM tabbyml/tabby:nightly
