@@ -6,4 +6,5 @@
 #FROM node:latest
 #FROM node:18.20.5
 #FROM node:18.20.5-slim
-FROM tabbyml/tabby:nightly
+#FROM tabbyml/tabby:nightly
+FROM ubuntu:22.04
