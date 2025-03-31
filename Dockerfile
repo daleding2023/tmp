@@ -7,4 +7,5 @@
 #FROM node:18.20.5
 #FROM node:18.20.5-slim
 #FROM tabbyml/tabby:nightly
-FROM ubuntu:22.04
+#FROM ubuntu:22.04
+FROM rust:latest
