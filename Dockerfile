@@ -19,4 +19,5 @@
 #ENTRYPOINT ["bash", "-c", "source $NVM_DIR/nvm.sh && exec \"$@\"", "--"]
 #CMD ["/bin/bash"]
 #################################################################################################
-FROM qwenllm/qwen-omni:2.5-cu121
+#FROM qwenllm/qwen-omni:2.5-cu121
+FROM codercom/code-server:4.99.0
