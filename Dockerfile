@@ -20,4 +20,5 @@
 #CMD ["/bin/bash"]
 #################################################################################################
 #FROM qwenllm/qwen-omni:2.5-cu121
-FROM codercom/code-server:4.99.0
+#FROM codercom/code-server:4.99.0
+FROM vimagick/mantisbt:latest
