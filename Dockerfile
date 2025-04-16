@@ -22,4 +22,5 @@
 #FROM qwenllm/qwen-omni:2.5-cu121
 #FROM codercom/code-server:4.99.0
 #FROM vimagick/mantisbt:latest
-FROM mantisbt/mantisbt
+#FROM mantisbt/mantisbt
+FROM node:22.14.0
