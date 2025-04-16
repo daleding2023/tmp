@@ -23,4 +23,5 @@
 #FROM codercom/code-server:4.99.0
 #FROM vimagick/mantisbt:latest
 #FROM mantisbt/mantisbt
-FROM node:22.14.0
+#FROM node:22.14.0
+FROM node:20
