@@ -27,4 +27,11 @@
 #20.19.0
 #FROM node:20
 #FROM node:22.12-alpine
-FROM python:3.12-slim-bookworm
+#FROM python:3.12-slim-bookworm
+FROM node:20-alpine
+RUN npm install -g supergateway
+#EXPOSE 8000
+#ENTRYPOINT ["supergateway"]
+#CMD ["--help"]
+RUN apk add --no-cache python3 coreutils
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
