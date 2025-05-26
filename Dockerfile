@@ -25,4 +25,5 @@
 #FROM mantisbt/mantisbt
 #FROM node:22.14.0
 #20.19.0
-FROM node:20
+#FROM node:20
+FROM node:22.12-alpine
