@@ -4,10 +4,12 @@ FROM node:20
 RUN npm install -g supergateway
 RUN npm install -g @modelcontextprotocol/server-filesystem
 
-RUN apt-get install -y software-properties-common
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt-get update
-RUN apt-get install -y python3.12 python3.12-distutils
+RUN apt-get update && apt-get install -y \
+    software-properties-common \
+    python3.12 \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+#RUN apt-get install -y python3.12-distutils
 #RUN apt-get update -y && apt-get install -y python3.12 python3.12-distutils
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 RUN /bin/uv tool uvx mcp-server-fetch
