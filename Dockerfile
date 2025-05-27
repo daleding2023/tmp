@@ -40,4 +40,4 @@ RUN npm install -g supergateway
 RUN apk add --no-cache curl
 RUN curl -fsSL https://deno.land/install.sh | sh
 ENV PATH="/root/.deno/bin:$PATH"
-RUN deno install -A jsr:@deno/deployctl --global
+#RUN deno install -A jsr:@deno/deployctl --global
