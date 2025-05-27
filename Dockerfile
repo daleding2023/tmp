@@ -34,8 +34,10 @@ RUN npm install -g supergateway
 #EXPOSE 8000
 #ENTRYPOINT ["supergateway"]
 #CMD ["--help"]
-RUN apk add --no-cache python3 coreutils
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
-#RUN uvx install mcp-server-fetch
-RUN /bin/uv tool uvx mcp-server-fetch
-#RUN curl -fsSL https://deno.land/install.sh | sh
+#RUN apk add --no-cache python3 coreutils
+#COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+#RUN /bin/uv tool uvx mcp-server-fetch
+RUN apk add --no-cache curl
+RUN curl -fsSL https://deno.land/install.sh | sh
+ENV PATH="/root/.deno/bin:$PATH"
+RUN deno install -A jsr:@deno/deployctl --global
