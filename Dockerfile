@@ -36,5 +36,6 @@ RUN npm install -g supergateway
 #CMD ["--help"]
 RUN apk add --no-cache python3 coreutils
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
-RUN uvx install mcp-server-fetch
+#RUN uvx install mcp-server-fetch
+RUN /bin/uv tool uvx mcp-server-fetch
 #RUN curl -fsSL https://deno.land/install.sh | sh
