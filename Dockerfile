@@ -28,8 +28,7 @@
 #FROM node:20
 #FROM node:22.12-alpine
 #FROM python:3.12-slim-bookworm
-#FROM node:20-alpine
-FROM registry-vpc.cn-hangzhou.aliyuncs.com/models2024/tmp:node
+FROM node:20-alpine
 RUN npm install -g supergateway
 #RUN npm install -g @modelcontextprotocol/server-filesystem
 #EXPOSE 8000
