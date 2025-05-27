@@ -30,7 +30,7 @@
 #FROM python:3.12-slim-bookworm
 FROM node:20-alpine
 RUN npm install -g supergateway
-RUN npm install -g @modelcontextprotocol/server-filesystem
+#RUN npm install -g @modelcontextprotocol/server-filesystem
 #EXPOSE 8000
 #ENTRYPOINT ["supergateway"]
 #CMD ["--help"]
