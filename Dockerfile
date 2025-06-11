@@ -1,1 +1,1 @@
-FROM eclipse-temurin:21-jre-jammy
+FROM eclipse-temurin:17-jdk-jammy
