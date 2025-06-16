@@ -1,1 +1,1 @@
-FROM eclipse-temurin:17-jdk-jammy
+FROM nacos/nacos-server:latest
