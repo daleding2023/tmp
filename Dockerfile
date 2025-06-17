@@ -1,1 +1,1 @@
-FROM certbot/certbot
+FROM nginx:latest
