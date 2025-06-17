@@ -1,1 +1,1 @@
-FROM opengauss/opengauss:7.0.0-RC1
+FROM myscale/myscaledb:1.6.4
