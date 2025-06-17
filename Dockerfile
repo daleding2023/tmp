@@ -1,1 +1,1 @@
-FROM milvusdb/milvus:v2.5.0-beta
+FROM opensearchproject/opensearch:latest
