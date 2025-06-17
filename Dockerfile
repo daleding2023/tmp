@@ -1,1 +1,1 @@
-FROM tensorchord/pgvecto-rs:pg16-v0.3.0
+FROM oceanbase/oceanbase-ce:4.3.5-lts
