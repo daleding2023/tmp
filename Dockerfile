@@ -1,1 +1,1 @@
-FROM oceanbase/oceanbase-ce:4.3.5-lts
+FROM milvusdb/milvus:v2.5.0-beta
