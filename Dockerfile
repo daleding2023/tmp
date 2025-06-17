@@ -1,1 +1,1 @@
-FROM postgres:15-alpine
+FROM langgenius/dify-sandbox:0.2.12
