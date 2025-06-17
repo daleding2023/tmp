@@ -1,1 +1,1 @@
-FROM redis:6-alpine
+FROM ubuntu/squid:latest
