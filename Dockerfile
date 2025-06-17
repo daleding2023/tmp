@@ -1,1 +1,1 @@
-FROM pgvector/pgvector:pg16
+FROM vastdata/vastbase-vector
