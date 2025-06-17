@@ -1,1 +1,1 @@
-FROM opensearchproject/opensearch:latest
+FROM opensearchproject/opensearch-dashboards:latest
