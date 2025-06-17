@@ -1,1 +1,1 @@
-FROM nacos/nacos-server:latest
+FROM postgres:15-alpine
