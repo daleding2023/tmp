@@ -3,4 +3,5 @@
 #FROM xprobe/xinference:latest
 #FROM xprobe/xinference:latest-cpu
 FROM xprobe/xinference:nightly-main
+#FROM xprobe/xinference:nightly-main-cpu
 #v1.5.1-qwen3
