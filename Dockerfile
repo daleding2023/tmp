@@ -1,1 +1,1 @@
-FROM langgenius/dify-web:1.5.1
+FROM matrixorigin/matrixone:2.1.1
