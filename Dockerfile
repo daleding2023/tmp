@@ -1,1 +1,1 @@
-FROM myscale/myscaledb:1.6.4
+FROM langgenius/dify-api:1.5.1
