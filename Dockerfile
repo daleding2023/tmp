@@ -5,3 +5,4 @@
 FROM xprobe/xinference:nightly-main
 #FROM xprobe/xinference:nightly-main-cpu
 #v1.5.1-qwen3
+#v1.8.1-qwen3-coder
