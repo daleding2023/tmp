@@ -2,7 +2,7 @@
 #FROM python:3.11
 #FROM python:3.11.8-slim
 #FROM python:3.14 暂时无
-FROM  infiniflow/ragflow:v0.20.0-slim
+FROM mysql:8.4.5
 #FROM python:3.13-slim
 #RUN apt-get update && \
 #    apt-get install -y wget && \
