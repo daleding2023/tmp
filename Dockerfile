@@ -4,3 +4,4 @@ FROM mintplexlabs/anythingllm:latest
 #v1.8.2 20250613
 #v1.8.3 20250710
 #v1.8.4 20250801
+#v1.8.5 20250815
