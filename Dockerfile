@@ -1,4 +1,5 @@
-FROM nightlord189/docklogkeeper:latest
+#FROM nightlord189/docklogkeeper:latest
+FROM langflowai/langflow:latest
 #FROM node:lts-alpine
 #FROM python:3.11
 #FROM python:3.11.8-slim
