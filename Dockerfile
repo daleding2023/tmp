@@ -1,4 +1,3 @@
-#FROM nightlord189/docklogkeeper:latest
 #FROM langflowai/langflow:latest
 FROM flowiseai/flowise:latest
 #FROM node:lts-alpine
