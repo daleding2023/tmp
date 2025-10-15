@@ -1,5 +1,6 @@
 ##FROM langflowai/langflow:latest
-FROM flowiseai/flowise:latest
+#FROM flowiseai/flowise:latest
+FROM langgenius/dify-api:1.9.1
 #FROM node:lts-alpine
 #FROM python:3.11
 #FROM python:3.11.8-slim
