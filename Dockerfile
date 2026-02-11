@@ -6,7 +6,7 @@
 #FROM python:3.11.8-slim
 #FROM python:3.14 暂时无
 
-FROM node:25-slim
+FROM node:24-slim
 #RUN apt-get update && \
 #    apt-get install -y nginx && \
 #    apt-get clean && \
