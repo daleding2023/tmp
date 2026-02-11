@@ -1,12 +1,12 @@
 ##FROM langflowai/langflow:latest
 #FROM flowiseai/flowise:latest
-FROM langgenius/dify-api:1.9.1
+#FROM langgenius/dify-api:1.9.1
 #FROM node:lts-alpine
 #FROM python:3.11
 #FROM python:3.11.8-slim
 #FROM python:3.14 暂时无
 
-#FROM node:22-slim
+FROM node:25-slim
 #RUN apt-get update && \
 #    apt-get install -y nginx && \
 #    apt-get clean && \
