@@ -6,6 +6,7 @@
 #FROM python:3.11.8-slim
 #FROM python:3.14 暂时无
 
+#docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
 #RUN apt-get update && \
 #    apt-get install -y nginx && \
@@ -27,13 +28,3 @@ RUN apt update && \
     # 清理apt缓存，减小镜像体积
     apt clean && \
     rm -rf /var/lib/apt/lists/*
-
-# 安装Flask（使用国内镜像，去掉sudo）
-RUN pip3 install --upgrade pip && \
-    pip3 install flask
-USER $PPTRUSER_UID
-# Generate THIRD_PARTY_NOTICES using chrome --credits.
-#RUN node -e "require('child_process').execSync(require('puppeteer').executablePath() + ' --credits', {stdio: 'inherit'})" > THIRD_PARTY_NOTICES
-RUN  node -e "require('puppeteer').launch({args: ['--no-sandbox']})"
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-#WORKDIR /home/pptruser/app
