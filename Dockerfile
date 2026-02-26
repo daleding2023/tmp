@@ -28,3 +28,6 @@ RUN apt update && \
     # 清理apt缓存，减小镜像体积
     apt clean && \
     rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install --upgrade pip && \
+    pip3 install flask
