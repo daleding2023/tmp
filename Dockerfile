@@ -6,7 +6,7 @@
 #FROM python:3.11.8-slim
 #FROM python:3.14 暂时无
 
-FROM node:24-slim
+#FROM node:24-slim  DaleDing20260226
 #RUN apt-get update && \
 #    apt-get install -y nginx && \
 #    apt-get clean && \
@@ -17,3 +17,23 @@ FROM node:24-slim
 #    apt-get install -y wget && \
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/*
+
+FROM ghcr.io/puppeteer/puppeteer:latest
+USER root
+# 更新系统包（去掉sudo，直接执行）
+RUN apt update && \
+    # 安装Python 3.11相关工具（精简命令，合并RUN减少镜像层）
+    apt install -y --no-install-recommends python3-pip python3.11-venv && \
+    # 清理apt缓存，减小镜像体积
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# 安装Flask（使用国内镜像，去掉sudo）
+RUN pip3 install --upgrade pip && \
+    pip3 install flask
+USER $PPTRUSER_UID
+# Generate THIRD_PARTY_NOTICES using chrome --credits.
+#RUN node -e "require('child_process').execSync(require('puppeteer').executablePath() + ' --credits', {stdio: 'inherit'})" > THIRD_PARTY_NOTICES
+RUN  node -e "require('puppeteer').launch({args: ['--no-sandbox']})"
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+#WORKDIR /home/pptruser/app
