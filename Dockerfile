@@ -19,15 +19,4 @@
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/*
 
-FROM ghcr.io/puppeteer/puppeteer:latest
-USER root
-# 更新系统包（去掉sudo，直接执行）
-RUN apt update && \
-    # 安装Python 3.11相关工具（精简命令，合并RUN减少镜像层）
-    apt install -y --no-install-recommends python3-pip python3.11-venv && \
-    # 清理apt缓存，减小镜像体积
-    apt clean && \
-    rm -rf /var/lib/apt/lists/*
-
-RUN pip3 install --upgrade pip && \
-    pip3 install flask
+FROM gcr.io/distroless/nodejs22-debian12
