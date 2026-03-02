@@ -19,4 +19,5 @@
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/*
 
-FROM gcr.io/distroless/nodejs22-debian12
+#FROM gcr.io/distroless/nodejs22-debian12
+FROM node:22-alpine
