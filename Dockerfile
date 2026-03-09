@@ -8,28 +8,12 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-#RUN apt-get update && \
-#    apt-get install -y nginx && \
-#    apt-get clean && \
-#    rm -rf /var/lib/apt/lists/*
-    
-#FROM python:3.13-slim
-#RUN apt-get update && \
-#    apt-get install -y wget && \
-#    apt-get clean && \
-#    rm -rf /var/lib/apt/lists/*
+FROM node:22-alpine
 
-#FROM gcr.io/distroless/nodejs22-debian12
-#FROM node:22-alpine
-#FROM nginx:alpine
-FROM registry.cn-hangzhou.aliyuncs.com/models2024/tmp:python3.12-slim
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+# Accept build argument for pnpm store path
+ARG PNPM_STORE_PATH=/root/.local/share/pnpm/store
 
-# Install Python dependencies
-RUN pip install --no-cache-dir \
-    fastapi \
-    "uvicorn[standard]" \
-    kubernetes
+# Install pnpm at specific version (matching package.json)
+RUN corepack enable && corepack install -g pnpm@10.26.2
+
+RUN pnpm config set store-dir ${PNPM_STORE_PATH}
