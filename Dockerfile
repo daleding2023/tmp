@@ -21,4 +21,15 @@
 
 #FROM gcr.io/distroless/nodejs22-debian12
 #FROM node:22-alpine
-FROM nginx:alpine
+#FROM nginx:alpine
+FROM python:3.12-slim
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install uv
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+ENV PATH="/root/.local/bin:$PATH"
