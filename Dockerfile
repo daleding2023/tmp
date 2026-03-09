@@ -22,7 +22,7 @@
 #FROM gcr.io/distroless/nodejs22-debian12
 #FROM node:22-alpine
 #FROM nginx:alpine
-FROM python:3.12-slim
+FROM registry.cn-hangzhou.aliyuncs.com/models2024/tmp:python3.12-slim
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
