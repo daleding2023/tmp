@@ -12,15 +12,16 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     bash \
     ca-certificates \
+    chromium \
     curl \
+    fonts-liberation \
+    fonts-noto-color-emoji \
     git \
     jq \
+    novnc \
     python3 \
-    ripgrep \
+    socat \
+    websockify \
+    x11vnc \
+    xvfb \
   && rm -rf /var/lib/apt/lists/*
-
-RUN useradd --create-home --shell /bin/bash sandbox
-USER sandbox
-WORKDIR /home/sandbox
-
-CMD ["sleep", "infinity"]
