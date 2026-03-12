@@ -4,24 +4,4 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-FROM debian:bookworm-slim
-
-ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
-    bash \
-    ca-certificates \
-    chromium \
-    curl \
-    fonts-liberation \
-    fonts-noto-color-emoji \
-    git \
-    jq \
-    novnc \
-    python3 \
-    socat \
-    websockify \
-    x11vnc \
-    xvfb \
-  && rm -rf /var/lib/apt/lists/*
+FROM node:22-bookworm@sha256:b501c082306a4f528bc4038cbf2fbb58095d583d0419a259b2114b5ac53d12e9
