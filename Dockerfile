@@ -5,6 +5,8 @@
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
 FROM registry.cn-hangzhou.aliyuncs.com/models2024/openclaw:local
+ENV HTTP_PROXY=""
+ENV HTTPS_PROXY=""
 ENV OPENCLAW_DOCKER_APT_PACKAGES="ffmpeg build-essential git curl jq telnet python3 wget"
 RUN --mount=type=cache,id=openclaw-bookworm-apt-cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,id=openclaw-bookworm-apt-lists,target=/var/lib/apt,sharing=locked \
