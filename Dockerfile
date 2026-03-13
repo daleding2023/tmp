@@ -4,6 +4,9 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
+ARG OPENCLAW_DOCKER_APT_PACKAGES="ffmpeg build-essential git curl jq telnet python3 wget"
+ARG OPENCLAW_INSTALL_BROWSER=1
+ARG OPENCLAW_INSTALL_DOCKER_CLI=1
 FROM registry.cn-hangzhou.aliyuncs.com/models2024/openclaw:local
 # Install additional system packages needed by your skills or extensions.
 # Example: docker build --build-arg OPENCLAW_DOCKER_APT_PACKAGES="python3 wget" .
