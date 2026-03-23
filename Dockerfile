@@ -7,7 +7,7 @@
 FROM python:3.11-slim-bookworm
 
 # Set platform for multi-arch builds (Docker Buildx will set this)
-ARG TARGETPLATFORM
+ARG TARGETPLATFORM="linux/amd64"
 ARG NODE_MAJOR=20
 
 # Install system dependencies (removed libgconf-2-4)
