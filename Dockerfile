@@ -9,6 +9,6 @@ RUN --mount=type=cache,id=openclaw-bookworm-apt-cache,target=/var/cache/apt,shar
     --mount=type=cache,id=openclaw-bookworm-apt-lists,target=/var/lib/apt,sharing=locked \
       apt-get update && \
       DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends python3-pip vim && \
-      rm -f /usr/lib/python3.11/EXTERNALLY-MANAGED && \
-      python3.11 -m pip install --upgrade pip && \
-      python3.11 -m pip install uv
+      # 官方唯一不会报错的安装方式
+      python3.11 -m pip install --upgrade pip --break-system-packages && \
+      python3.11 -m pip install uv --break-system-packages
