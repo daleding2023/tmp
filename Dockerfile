@@ -71,7 +71,7 @@ RUN mkdir -p /etc/apt/keyrings \
 RUN node -v && npm -v && npx -v
 
 # Set up working directory
-WORKDIR /app
+#WORKDIR /app
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt .
