@@ -6,4 +6,7 @@
 #0.6.6
 #v0.11.4
 #20260403
-FROM ollama/ollama:latest
+#FROM ollama/ollama:latest
+#v0.20.0
+FROM registry.cn-hangzhou.aliyuncs.com/models2024/tmp:ollama
+RUN ollama pull qwen3.5:35b
