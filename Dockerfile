@@ -5,4 +5,5 @@
 #FROM ollama/ollama:0.5.8-rc6
 #0.6.6
 #v0.11.4
+#20260403
 FROM ollama/ollama:latest
