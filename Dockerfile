@@ -4,4 +4,4 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-FROM jaegertracing/all-in-one:1.68.0
+FROM zenika/alpine-chrome:124
