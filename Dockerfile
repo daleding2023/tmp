@@ -4,4 +4,18 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-FROM zenika/alpine-chrome:124
+FROM debian:bookworm-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+    bash \
+    ca-certificates \
+    curl \
+    git \
+    jq \
+    python3 \
+    python3-pip \
+    ripgrep \
+  && rm -rf /var/lib/apt/lists/*
