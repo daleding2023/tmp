@@ -4,4 +4,4 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-FROM langgenius/qdrant:v1.8.3
+FROM containers.intersystems.com/intersystems/iris-community:2025.3
