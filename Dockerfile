@@ -4,4 +4,4 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-FROM langgenius/dify-web:1.14.0
+FROM langgenius/dify-sandbox:0.2.15
