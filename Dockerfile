@@ -4,4 +4,4 @@
 
 #docker pull registry.cn-hangzhou.aliyuncs.com/models2024/tmp:node 
 #FROM node:24-slim  DaleDing20260226
-FROM downloads.unstructured.io/unstructured-io/unstructured-api:latest
+FROM langgenius/dify-plugin-daemon:0.5.4-local
