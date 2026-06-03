@@ -6,4 +6,5 @@
 #FROM eosphorosai/dbgpt-openai:latest
 #FROM eosphorosai/dbgpt-openai:v0.7.1
 #FROM eosphorosai/dbgpt-openai:v0.7.2
-FROM eosphorosai/dbgpt-openai:v0.8.0
+#FROM eosphorosai/dbgpt-openai:v0.8.0
+FROM eosphorosai/dbgpt:v0.8.0
