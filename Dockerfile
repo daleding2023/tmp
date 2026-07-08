@@ -1,6 +1,7 @@
 #20260202 v1.10.0
 #20260319 v1.11.2
 #v1.12.1
+#v1.15.0
 FROM mintplexlabs/anythingllm:latest
 #v1.7.5 20250311
 #v1.8.1 20250506
