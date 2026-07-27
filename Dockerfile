@@ -9,7 +9,9 @@
 #FROM eosphorosai/dbgpt-openai:v0.8.0
 #FROM eosphorosai/dbgpt:v0.8.0
 #FROM mysql/mysql-server
-FROM registry.cn-hangzhou.aliyuncs.com/models2024/tmp:dbgpt-openai-v0.8.0
-WORKDIR /
+
+#FROM registry.cn-hangzhou.aliyuncs.com/models2024/tmp:dbgpt-openai-v0.8.0
+#WORKDIR /
 # 安装curl（Debian/Ubuntu系用apt，DB-GPT官方镜像是debian基础）
-RUN apt update && apt install -y curl && rm -rf /var/lib/apt/lists/*
+#RUN apt update && apt install -y curl && rm -rf /var/lib/apt/lists/*
+FROM eosphorosai/dbgpt-openai:v0.8.1
